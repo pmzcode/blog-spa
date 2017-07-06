@@ -1,0 +1,33 @@
+.header{
+    background-color: #333331;
+    height: 50px;
+    overflow: hidden;
+}
+
+.navbar-brand{
+    background-color: #f26c4f;
+    color: white;
+    width: 25%;
+    text-align: center;
+    font-size: 20pt;
+}
+
+ul li a{
+    color: white;
+    font-weight: bold;
+}
+
+#login{
+    margin-right: 150px;
+}
+
+#username{
+    margin-top:15px;
+    color:#c55e47;
+    font-weight: bold;
+}
+
+#logo-plus{
+    font-size: 20pt;
+    opacity: 0.5;
+}
