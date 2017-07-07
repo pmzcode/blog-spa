@@ -6,17 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var ContainerComponent = (function () {
-    function ContainerComponent() {
+var FooterComponent = (function () {
+    function FooterComponent() {
     }
-    return ContainerComponent;
+    return FooterComponent;
 }());
-ContainerComponent = __decorate([
+FooterComponent = __decorate([
     core_1.Component({
-        selector: 'container',
-        templateUrl: 'app/container.component.html',
-        styleUrls: ['app/container.component.html']
+        selector: 'footer',
+        templateUrl: 'app/footer/footer.component.html',
+        styleUrls: ['app/footer/footer.component.css']
     })
-], ContainerComponent);
-exports.ContainerComponent = ContainerComponent;
-//# sourceMappingURL=container.component.js.map
+], FooterComponent);
+exports.FooterComponent = FooterComponent;
+//# sourceMappingURL=footer.component.js.map
