@@ -1,4 +1,135 @@
 .footer{
-    background-color: #333331;
-    height: 500px;
+    background-color: #343434;
+    height: 388px;
+    width: 100%;
+    color: white;
+    padding: 50px 12% 0 12%;
 }
+
+.footer_border{
+    background-color: rgb(229, 229, 229);
+    opacity: 0.502;
+    height: 16px;
+    width: 100%;
+}
+
+.info_label{
+    font-size: 12px;
+    font-family: "Helvetica Neue";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+    width: 444px;
+    text-align: left;
+
+}
+
+.social_panel{
+    width: 100%;
+    height: 72px;
+}
+
+.social{
+    border-radius: 50%;
+    background-color: #f26c4f;
+    width: 48px;
+    height: 47px;
+    z-index: 223;
+    margin: 0 0 0 0;
+    float: left;
+    margin-left: 12px;
+    margin-top: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#facebook{
+    margin-left: 0;
+    background-image: url("/app/img/facebook.png");
+}
+
+#twitter{
+    background-image: url("/app/img/twitter.png");
+
+}
+
+#rss{
+    background-image: url("/app/img/rss.png");
+}
+
+#copyright{
+    margin-top: 40px;
+    font-size: 12px;
+    font-family: "Helvetica Neue";
+    color: rgba(255, 255, 255, 0.502);
+    line-height: 1.667;
+    width:100%;
+    text-align: left;
+    float:none;
+
+}
+
+
+.newsletter{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: white;
+    width: 443px;
+    height: 49px;
+    float: right;
+}
+
+.envelope{
+    background-image: url("/app/img/envelope.png");
+    height: 13px;
+    width: 16px;
+    float: left;
+    border-radius: 2px;
+    background-color: grey;
+    border: 1px solid black;
+    color: rgb(124, 124, 124);
+    margin: 18px 17px 0px 9px;
+}
+
+
+::-webkit-input-placeholder {
+    font-size: 12px;
+    font-family: "Helvetica";
+    color: rgb(124, 124, 124);
+    line-height: 2;
+    text-align: left;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+#newsletter_input{
+    border: 0px;
+    color: rgb(124, 124, 124);
+    width: 320px;
+    margin-top: 15px;
+}
+
+.newsletter_btn{
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0,0,0);
+    border-radius: 3px;
+    background-color: rgb(225, 89, 59);
+    box-shadow: inset 0px 2px 0px 0px rgba(251, 251, 252, 0.44);
+    width: 56px;
+    height: 36px;
+    font-size: 14px;
+    font-family: "Helvetica";
+    color: rgb(202, 60, 32);
+    font-weight: bold;
+    line-height: 1.714;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.55);
+    margin-left: 15px;
+}
+
+
+
