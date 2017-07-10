@@ -1,36 +1,31 @@
 .header{
     background-color: #333331;
+    width: 100%;
+    display: inline-block;
     height: 44px;
-    overflow: hidden;
+    z-index: 102;
+    background-image: url("/app/img/nav-background.PNG");
 }
 
-.navbar-brand{
-    background-color: #f26c4f;
-    color: white;
-    width: 369px;
-    text-align: center;
-    font-size: 24pt;
-    font-family: Helvetica;
+.filter{
+    width: 100%;
+    height: 52px;
+    background-color: rgb(53, 53, 51);
+    opacity: 0.402;
+    z-index: 50;
 
 }
 
-ul li a{
-    color: white;
-    font-weight: bold;
-    font-size: 12pt;
+.header-image{
+    background-image: url("/app/img/header-background.jpg");
+    width: 100%;
+    height: 47px;
+    z-index: 10;
 }
 
-#login{
-    margin-right: 150px;
-}
 
-#username{
-    margin-top:15px;
-    color:#c55e47;
-    font-weight: bold;
-}
-
-#logo-plus{
-    font-size: 20pt;
-    opacity: 0.5;
+@media screen and (max-width: 1200px) {
+    .header{
+        height: auto;
+    }
 }

@@ -1,0 +1,31 @@
+.logo{
+    background-color: #f26c4f;
+    color: white;
+    width: 369px;
+    text-align: center;
+    font-size: 19pt;
+    font-family: Helvetica;
+    height: 44px;
+    text-decoration: none;
+    float: left;
+    z-index: 103;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a{
+    color:white;
+}
+
+#logo-plus{
+    font-size: 19pt;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 960px) {
+    .logo{
+        width: 100%;
+    }
+}

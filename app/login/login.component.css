@@ -1,0 +1,61 @@
+#username{
+    margin-left: 15px;
+    color:rgb(242, 108, 79);
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 3;
+    font-family: "Helvetica";
+}
+
+
+
+#log {
+
+    float: left;
+    padding: 0;
+    list-style: none;
+    background-color: #333331;
+    height: 44px;
+    width: auto;
+    background-image: url("/app/img/nav-background.PNG");
+}
+
+
+#log li {
+    float: left;
+    height: 44px;
+}
+
+#log li a {
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: white;
+    height: 44px;
+    z-index: 103;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 3;
+    font-family: "Helvetica";
+}
+
+#log li a:hover {
+    font-family: Helvetica;
+    color: white;
+}
+
+ul#log{
+    margin-right: 160px;
+    margin-bottom: 0;
+    float: right;
+    z-index: 103;
+}
+
+@media screen and (max-width: 960px) {
+    ul#log{
+        float: left;
+        width: 100%;
+        margin-left: auto;
+    }
+}
