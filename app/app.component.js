@@ -14,7 +14,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n        <footer></footer>\n    "
+        template: "\n        <social-profiles></social-profiles>\n    "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

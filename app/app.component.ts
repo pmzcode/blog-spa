@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
     template: `
-        <footer></footer>
+        <social-profiles></social-profiles>
     `
 })
 export class AppComponent {

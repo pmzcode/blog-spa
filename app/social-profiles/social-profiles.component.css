@@ -1,0 +1,40 @@
+.social_profiles{
+
+    width: 50px;
+    height: 200px;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+ul li {
+    height: 50px;
+    width: 50px;
+    background-color: #f1674b;
+    border-bottom: 1px solid #ec4d34;
+    border-right: 1px solid #d75f48;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top: 1px solid #e17f68;
+    box-shadow: 0 1px #7696a4;
+}
+
+#facebook{
+    background-image: url("/app/img/social-profiles/facebook.png");
+    border-radius: 0 0px 2px 0px;
+}
+
+#ball{
+    background-image: url("/app/img/social-profiles/ball.png");
+    border-radius: 0 2px 0px 0px;
+}
+
+#twitter{
+    background-image: url("/app/img/social-profiles/twitter.png");
+}
+
+
+
+#rss{
+    background-image: url("/app/img/social-profiles/rss.png");
+}
+

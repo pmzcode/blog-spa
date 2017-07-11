@@ -9,11 +9,12 @@ import { LogoComponent } from './logo/logo.component';
 import { NavbarComponent } from './navigation/navigation.component';
 import { LoginComponent } from './login/login.component'
 import { ModalComponent } from './modal/modal.component'
+import { SocialProfilesComponent } from './social-profiles/social-profiles.component'
 
 @NgModule({
     imports:      [ BrowserModule, FormsModule ],
     declarations: [ AppComponent, HeaderComponent, ContentComponent, FooterComponent, LogoComponent, NavbarComponent,
-    LoginComponent, ModalComponent ],
+    LoginComponent, ModalComponent, SocialProfilesComponent ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
