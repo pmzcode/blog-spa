@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
     template: `
-
-        <post></post>
-        <post></post>
+        
+        <small-post></small-post>
+        
     `
 })
 export class AppComponent {

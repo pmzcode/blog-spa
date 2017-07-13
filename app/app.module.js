@@ -18,6 +18,7 @@ var login_component_1 = require("./login/login.component");
 var modal_component_1 = require("./modal/modal.component");
 var social_profiles_component_1 = require("./social-profiles/social-profiles.component");
 var post_component_1 = require("./post/post.component");
+var small_post_component_1 = require("./small-post/small-post.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +28,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
         declarations: [app_component_1.AppComponent, header_component_1.HeaderComponent, content_component_1.ContentComponent, footer_component_1.FooterComponent, logo_component_1.LogoComponent, navigation_component_1.NavbarComponent,
-            login_component_1.LoginComponent, modal_component_1.ModalComponent, social_profiles_component_1.SocialProfilesComponent, post_component_1.PostComponent],
+            login_component_1.LoginComponent, modal_component_1.ModalComponent, social_profiles_component_1.SocialProfilesComponent, post_component_1.PostComponent, small_post_component_1.SmallPostComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
