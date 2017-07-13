@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector: 'my-app',
     template: `
         
-        <small-post></small-post>
+        <sidebar></sidebar>
         
     `
 })

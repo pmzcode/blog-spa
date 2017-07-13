@@ -12,11 +12,12 @@ import { ModalComponent } from './modal/modal.component'
 import { SocialProfilesComponent } from './social-profiles/social-profiles.component'
 import { PostComponent } from './post/post.component'
 import { SmallPostComponent } from './small-post/small-post.component'
+import { SidebarComponent } from './sidebar/sidebar.component'
 
 @NgModule({
     imports:      [ BrowserModule, FormsModule ],
     declarations: [ AppComponent, HeaderComponent, ContentComponent, FooterComponent, LogoComponent, NavbarComponent,
-    LoginComponent, ModalComponent, SocialProfilesComponent, PostComponent, SmallPostComponent ],
+    LoginComponent, ModalComponent, SocialProfilesComponent, PostComponent, SmallPostComponent, SidebarComponent ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
