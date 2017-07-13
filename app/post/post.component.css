@@ -106,3 +106,88 @@
     overflow: hidden; /* Обрезаем все, что не помещается в область */
     height: 70px;
 }
+
+
+.social{
+    border-radius: 50%;
+    background-color: #f26c4f;
+    width: 48px;
+    height: 47px;
+    z-index: 223;
+    margin: 0 0 0 0;
+    padding-left: 0;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#facebook{
+    margin-left: 0;
+    background-image: url("/app/img/facebook.png");
+    list-style-type: none;
+    margin-top:170px;
+}
+
+#twitter{
+    background-image: url("/app/img/twitter.png");
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+.social_panel{
+    padding: 8px 10px 10px 10px;
+    margin-bottom: 0;
+}
+
+.comments {
+    border-radius: 5px;
+    background-color: rgb(242, 108, 79);
+
+
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    float: right;
+    margin-top: 180px;
+    margin-right: 8px;
+    padding-top: 5px;
+
+
+}
+
+
+.actions{
+    float:right;
+    width: 100%;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-left: 0;
+    padding-left: 582px;
+
+}
+
+
+
+.actions li{
+    list-style-type: none;
+    width: 30px;
+    border-radius: 3px;
+    background-color: rgb(242, 108, 79);
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#delete{
+    margin-top: 3px;
+    background-image: url("/app/img/delete.png");
+}
+
+#edit{
+    background-image: url("/app/img/edit.png");
+}
