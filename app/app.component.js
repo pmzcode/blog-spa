@@ -14,7 +14,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n        \n        <sidebar></sidebar>\n        \n    "
+        styleUrls: ['app/app.component.css'],
+        template: "        \n<div class=\"app\">\n        <header></header>\n        <div class=\"container \">\n            <div class=\"row t1\">\n                <div class=\"col-lg-6 post-container\">\n                    <post></post>\n                    <post></post>\n                </div>\n                <div class=\"col-lg-3 sidebar\">\n                    <sidebar></sidebar>\n                </div>\n            </div>\n            <div class=\"row t2\">\n                <div class=\"col-lg-6\">\n                <small-post class=\"col-lg-6\"></small-post>\n                <small-post class=\"col-lg-6\"></small-post>\n                </div>\n            </div>\n        </div>\n        <div class=\"footer col-lg-12\">\n            <footer></footer>\n        </div>\n        <social-profiles></social-profiles>\n</div>\n        \n    "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

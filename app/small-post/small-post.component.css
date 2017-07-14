@@ -1,7 +1,6 @@
 .post{
     width: 289px;
     height: 280px;
-    margin-left: 20px;
     padding-left: 35px;
     padding-top: 38px;
     padding: 38px 35px 38px 35px;
@@ -28,7 +27,6 @@
     height: 235px;
     width: 289px;
     background-color: white;
-    margin-left: 20px;
     margin-bottom: 10px;
     border: 1px solid rgb(194, 192, 184);
     padding: 0 0 0 0;
