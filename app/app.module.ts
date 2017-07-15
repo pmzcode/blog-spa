@@ -2,22 +2,26 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { AppComponent }   from './app.component';
-import { FooterComponent }   from './footer/footer.component';
-import { HeaderComponent }   from './header/header.component';
-import { ContentComponent } from './content/content.component';
-import { LogoComponent } from './logo/logo.component';
-import { NavbarComponent } from './navigation/navigation.component';
-import { LoginComponent } from './login/login.component'
-import { ModalComponent } from './modal/modal.component'
-import { SocialProfilesComponent } from './social-profiles/social-profiles.component'
-import { PostComponent } from './post/post.component'
-import { SmallPostComponent } from './small-post/small-post.component'
-import { SidebarComponent } from './sidebar/sidebar.component'
+import { FooterComponent }   from './components/footer/footer.component';
+import { HeaderComponent }   from './components/header/header.component';
+import { ContentComponent } from './components/content/content.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { NavbarComponent } from './components/navigation/navigation.component';
+import { LoginComponent } from './components/login/login.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { SocialProfilesComponent } from './components/social-profiles/social-profiles.component';
+import { PostComponent } from './components/post/post.component';
+import { SmallPostComponent } from './components/small-post/small-post.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { TestpostComponent } from './components/testpost/testpost.component';
+import { PostFormComponent } from './components/post-form/post-form.component'
+
 
 @NgModule({
     imports:      [ BrowserModule, FormsModule ],
     declarations: [ AppComponent, HeaderComponent, ContentComponent, FooterComponent, LogoComponent, NavbarComponent,
-    LoginComponent, ModalComponent, SocialProfilesComponent, PostComponent, SmallPostComponent, SidebarComponent ],
+    LoginComponent, ModalComponent, SocialProfilesComponent, PostComponent, SmallPostComponent, SidebarComponent,
+    TestpostComponent, PostFormComponent ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

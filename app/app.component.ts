@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
     selector: 'my-app',
     styleUrls: ['app/app.component.css'],
     template: `        
+        <!--
 <div class="app">
         <header></header>
         <div class="container ">
@@ -28,7 +29,8 @@ import { Component } from '@angular/core';
         </div>
         <social-profiles></social-profiles>
 </div>
-        
+-->
+        <post-form></post-form>
     `
 })
 export class AppComponent {
