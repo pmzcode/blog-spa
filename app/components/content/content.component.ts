@@ -16,7 +16,10 @@ export class ContentComponent implements OnInit{
 
     addItem(id: number, header: string, subheader: string, image: string, content: string, commentsCount: number){
 
-        this.postService.addData(id, header, subheader, image, content, commentsCount);
+
+        this.postService.addData(id, header, subheader, image, content, commentsCount)
+        //this.items.push(new Post(id, header, subheader, image, content, commentsCount));
+
     }
     ngOnInit(){
         this.items = this.postService.getData();

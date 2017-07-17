@@ -1,6 +1,7 @@
 <ul id="log">
     <li id="username">{{username}}</li>
     <li>
-        <a id="login"  (click)="login()">{{action}}</a>
+        <a id="login" ng-hide="hide=!hide" (click)="login()">{{action}}</a>
     </li>
 </ul>
+<modal [hidden]="!hide"></modal>

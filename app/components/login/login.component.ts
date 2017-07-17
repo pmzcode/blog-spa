@@ -11,6 +11,8 @@ export class LoginComponent{
     username: string = '';
     action: string = "Login";
 
+    hide: boolean = false;
+
     login() : void {
         if(!this.authorized){
             this.action = "Logout";
@@ -21,6 +23,8 @@ export class LoginComponent{
             this.username = "";
             this.authorized = false;
         }
+
+        this.hide = true;
     }
 }
 

@@ -2,9 +2,11 @@ import {Post} from '../models/post';
 
 export class PostService{
 
+    private authorized: boolean = false;
+
     private data: Post[] = [
-        {id:1,header:"test", subheader: "another_test",image:"ds",content:"bla-bla",commentsCount:12},
-        {id:2,header:"test", subheader: "another_test",image:"ds",content:"bla-bla",commentsCount:12}
+      //  {id:1,header:"Скоро практика закончится", subheader: "Побыстрее бы",image:"ds",content:"Было бы круто все успеть сделать",commentsCount:3},
+        {id:2,header:"Надо сдавать лабы смелову", subheader: "Три штуки осталось",image:"ds",content:"Хз как",commentsCount:0}
     ];
     getData(): Post[] {
 

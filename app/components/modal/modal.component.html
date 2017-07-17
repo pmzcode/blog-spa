@@ -1,12 +1,13 @@
 <div class="background">
+</div>
 <div class="modal_window">
     <div class="modal-header">
         Login
     </div>
 
-    <input type="text" class="field" placeholder="Username">
-    <input type="text" class="field" placeholder="Password">
-    <button class="btn">Login</button>
+    <input type="text" class="field" placeholder="Username" #username>
+    <input type="text" class="field" placeholder="Password" #password>
+    <button class="btn" (click)="login(username.value,password.value)" >Login</button>
 
 </div>
-</div>
+

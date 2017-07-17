@@ -22,6 +22,7 @@ var small_post_component_1 = require("./components/small-post/small-post.compone
 var sidebar_component_1 = require("./components/sidebar/sidebar.component");
 var testpost_component_1 = require("./components/testpost/testpost.component");
 var post_form_component_1 = require("./components/post-form/post-form.component");
+var data_service_1 = require("./services/data.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,7 +34,8 @@ AppModule = __decorate([
         declarations: [app_component_1.AppComponent, header_component_1.HeaderComponent, content_component_1.ContentComponent, footer_component_1.FooterComponent, logo_component_1.LogoComponent, navigation_component_1.NavbarComponent,
             login_component_1.LoginComponent, modal_component_1.ModalComponent, social_profiles_component_1.SocialProfilesComponent, post_component_1.PostComponent, small_post_component_1.SmallPostComponent, sidebar_component_1.SidebarComponent,
             testpost_component_1.TestpostComponent, post_form_component_1.PostFormComponent],
-        bootstrap: [app_component_1.AppComponent]
+        bootstrap: [app_component_1.AppComponent],
+        providers: [data_service_1.DataService]
     })
 ], AppModule);
 exports.AppModule = AppModule;

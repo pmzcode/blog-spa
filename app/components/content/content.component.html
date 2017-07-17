@@ -1,7 +1,39 @@
+<div>
+    <label>Post:</label> <input #postId /><br>
+    <label>Header:</label> <input #postHeader /><br>
+    <label>Subheader:</label> <input #postSubheader /><br>
+    <label>Image:</label> <input #postImage /><br>
+    <label>Content:</label> <input #postContent /><br>
+    <label>Comments:</label> <input #postComments /><br>
+    <button (click)="addItem(postId.value,postHeader.value,postSubheader.value,postImage.value,postContent.value,postComments.value);">
+        Add
+    </button>
+</div>
 <div class="grid grid-pad">
     <div *ngFor="let post of items"  class="col-1-4 test">
-            <h4>{{post.header}}</h4>
-            <h4>{{post.subheader}}</h4>
-            <h4>{{post.content}}</h4>
+        <div class="post_header">
+            <div class="image">
+                <ul class="actions">
+                    <li id="edit"></li>
+                    <li id="delete"></li>
+                </ul>
+                <div class="comments">{{post.commentsCount}} Comments</div>
+
+
+                <ul class="social_panel">
+                    <li class="social" id="facebook"></li>
+                    <li class="social" id="twitter"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="post">
+            <div class="header">{{post.header}}</div>
+            <div class="date">19th April 2012</div>
+            <div class="subheader">{{post.subheader}}</div>
+            <div class="text">
+                {{post.content}}
+            </div>
+
+        </div>
     </div>
 </div>
