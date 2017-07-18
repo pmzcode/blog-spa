@@ -20,7 +20,6 @@ var social_profiles_component_1 = require("./components/social-profiles/social-p
 var post_component_1 = require("./components/post/post.component");
 var small_post_component_1 = require("./components/small-post/small-post.component");
 var sidebar_component_1 = require("./components/sidebar/sidebar.component");
-var testpost_component_1 = require("./components/testpost/testpost.component");
 var post_form_component_1 = require("./components/post-form/post-form.component");
 var data_service_1 = require("./services/data.service");
 var AppModule = (function () {
@@ -33,7 +32,7 @@ AppModule = __decorate([
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
         declarations: [app_component_1.AppComponent, header_component_1.HeaderComponent, content_component_1.ContentComponent, footer_component_1.FooterComponent, logo_component_1.LogoComponent, navigation_component_1.NavbarComponent,
             login_component_1.LoginComponent, modal_component_1.ModalComponent, social_profiles_component_1.SocialProfilesComponent, post_component_1.PostComponent, small_post_component_1.SmallPostComponent, sidebar_component_1.SidebarComponent,
-            testpost_component_1.TestpostComponent, post_form_component_1.PostFormComponent],
+            post_form_component_1.PostFormComponent],
         bootstrap: [app_component_1.AppComponent],
         providers: [data_service_1.DataService]
     })

@@ -177,3 +177,13 @@
 #edit{
     background-image: url("/app/img/edit.png");
 }
+
+.image2{
+    height: 308px;
+    width: 630px;
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(194, 192, 184);
+    padding: 0 0 0 0;
+}

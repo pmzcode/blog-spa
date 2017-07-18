@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {DataService} from "../../services/data.service";
 
 @Component({
@@ -9,17 +9,16 @@ import {DataService} from "../../services/data.service";
 export class ModalComponent{
 
 
-    username: string; // это вверх передать
-
-
-    hide: boolean = false; // это вверх передать
-
+    @Output() onUsernameChange = new EventEmitter<string>();
+    @Output() onHideChange = new EventEmitter<boolean>();
 
 
     constructor(private dataService: DataService){}
 
     login(username: string, password: string){
-        username = this.dataService.login(username, password)
+        var username = this.dataService.login(username, password)
+        this.onUsernameChange.emit(username);
+        this.onHideChange.emit(false);
     }
 
 }

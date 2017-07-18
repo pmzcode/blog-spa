@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { Post } from 'D:\\git\\blog-spa\\app\\models\\post'
+import {Component, Input} from '@angular/core';
+
+import {DataService} from "../../services/data.service";
+import {Post} from "../../models/post";
 
 @Component({
     selector: 'post',
@@ -7,8 +9,11 @@ import { Post } from 'D:\\git\\blog-spa\\app\\models\\post'
     styleUrls: ['app/components/post/post.component.css']
 })
 export class PostComponent{
-    posts: Post[] = [
-        {id:1,header:"test", subheader: "another_test",image:"ds",content:"bla-bla",commentsCount:12},
-        {id:2,header:"test", subheader: "another_test",image:"ds",content:"bla-bla",commentsCount:12}
-    ];
+    @Input() post: Post;
+
+    constructor(private dataService: DataService){}
+
+    deletePost(){
+        this.dataService.deletePost(this.post.id);
+    }
 }

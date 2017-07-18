@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-var User = {name:"egor",password:"12345"};
+
 
 @Component({
     selector: 'login',
@@ -9,6 +9,7 @@ var User = {name:"egor",password:"12345"};
 export class LoginComponent{
     authorized: boolean = false;
     username: string = '';
+    hello: string = ''
     action: string = "Login";
 
     hide: boolean = false;
@@ -16,15 +17,26 @@ export class LoginComponent{
     login() : void {
         if(!this.authorized){
             this.action = "Logout";
-            this.username = "Hello, " + User.name;
             this.authorized = true;
+            this.hide = true;
         } else {
             this.action = "Login";
             this.username = "";
             this.authorized = false;
+            this.hello ="";
+
         }
 
-        this.hide = true;
+
+    }
+
+    onUsernameChange(test:string){
+        this.username=test;
+        this.hello ="Hello,";
+    }
+
+    onHideChange(test:boolean){
+        this.hide=test;
     }
 }
 

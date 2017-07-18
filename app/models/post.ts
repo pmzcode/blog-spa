@@ -1,5 +1,5 @@
 export class Post {
-    id: number;
+    public id: number;
     header: string;
     subheader: string;
     image: string;

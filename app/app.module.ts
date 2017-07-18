@@ -13,7 +13,6 @@ import { SocialProfilesComponent } from './components/social-profiles/social-pro
 import { PostComponent } from './components/post/post.component';
 import { SmallPostComponent } from './components/small-post/small-post.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { TestpostComponent } from './components/testpost/testpost.component';
 import { PostFormComponent } from './components/post-form/post-form.component'
 import { RouterModule } from '@angular/router'
 import {DataService} from "./services/data.service";
@@ -23,7 +22,7 @@ import {DataService} from "./services/data.service";
     imports:      [ BrowserModule, FormsModule ],
     declarations: [ AppComponent, HeaderComponent, ContentComponent, FooterComponent, LogoComponent, NavbarComponent,
     LoginComponent, ModalComponent, SocialProfilesComponent, PostComponent, SmallPostComponent, SidebarComponent,
-    TestpostComponent, PostFormComponent ],
+     PostFormComponent ],
     bootstrap:    [ AppComponent ],
     providers: [DataService]
 })

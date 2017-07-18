@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
     selector: 'my-app',
     styleUrls: ['app/app.component.css'],
     template: `        
-        <!--
-<div class="app">
+       
+<!--<div class="app">
         <header></header>
         <div class="container ">
             <div class="row t1">
@@ -28,10 +28,10 @@ import { Component } from '@angular/core';
             <footer></footer>
         </div>
         <social-profiles></social-profiles>
-</div>
--->
+</div>-->
 
-        <div class="app">
+
+        <!--<div class="app">
             <header></header>
             <div class="container ">
                 <div class="row t1">
@@ -51,7 +51,8 @@ import { Component } from '@angular/core';
                 <footer></footer>
             </div>
             <social-profiles></social-profiles>
-        </div>
+        </div>-->
+        <content></content>
     `
 })
 export class AppComponent {

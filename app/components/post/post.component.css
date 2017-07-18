@@ -176,3 +176,85 @@
 #edit{
     background-image: url("/app/img/edit.png");
 }
+
+.actions li a{
+    display: block;
+    height: 100%;
+}
+
+.social_panel li a{
+    display: block;
+    height: 100%;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .post{
+        width: 50%;
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .post_header{
+        width: 50%;
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .image{
+        width: auto;
+        height: auto;
+
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .post{
+        width: 70%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .post_header{
+        width: 70%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .image{
+        width: auto;
+        height: auto;
+
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .post{
+        width: 60%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .post_header{
+        width: 60%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .image{
+        width: auto;
+        height: auto;
+
+    }
+
+    .text{
+        height: 30px;
+    }
+
+    .social_panel{
+        margin-right: 20px;
+    }
+
+}
