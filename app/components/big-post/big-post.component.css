@@ -1,0 +1,204 @@
+.post{
+    width: 50%;
+    height: auto;
+    margin-left: 20px;
+    padding-left: 35px;
+    padding-top: 38px;
+    padding: 38px 35px 38px 35px;
+    box-shadow:
+            0 0 0 1px rgb(194, 192, 184) inset,
+            0px 5px 0 -4px rgb(255, 255, 255),
+            0px 5px 0 -3px rgb(194, 192, 184),
+            0 11px 0 -8px rgb(255, 255, 255),
+            0 11px 0 -7px rgb(194, 192, 184),
+            0 17px 0 -12px rgb(255, 255, 255),
+            0 17px 0 -11px rgb(194, 192, 184);
+    margin-bottom: 30px;
+
+}
+
+
+.post_header{
+    height: 450px;
+    width: 50%;
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(194, 192, 184);
+    padding: 0 0 0 0;
+}
+
+.image{
+    height: 434px;
+    width: auto;
+    margin: 8px 8px 8px 8px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url("/app/img/bigpost.png");
+}
+
+.post {
+    position: relative;
+    background:
+            linear-gradient(#fbfbfb 2px, white 0);
+    background-size:100% 14px;
+}
+
+
+.header{
+
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+
+    width: 100%;
+    height: 102px;
+    padding-top: 0;
+    font-size: 20px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    z-index: 12;
+    padding-top: 30px;
+    padding-bottom: 5px;
+
+
+
+}
+
+.date{
+    font-size: 11px;
+    font-family: "Helvetica";
+    color: rgb(174, 174, 174);
+    line-height: 3.091;
+    text-align: left;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.004);
+}
+
+.subheader{
+    font-size: 15px;
+    font-family: "Helvetica";
+    color: rgb(242, 108, 79);
+    font-weight: bold;
+    line-height: 2.267;
+    text-align: left;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.004);
+}
+
+.text {
+    font-size: 12px;
+    font-family: "Helvetica";
+    color: rgb(149, 149, 149);
+    line-height: 2;
+    text-align: left;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.004);
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+
+}
+
+.social{
+    border-radius: 50%;
+    background-color: #f26c4f;
+    width: 48px;
+    height: 47px;
+    z-index: 223;
+    margin: 0 0 0 0;
+    padding-left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#facebook{
+    margin-left: 0;
+    background-image: url("/app/img/facebook.png");
+    list-style-type: none;
+    margin-top:70px;
+}
+
+#twitter{
+    background-image: url("/app/img/twitter.png");
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+.social_panel{
+    padding: 8px 10px 10px 10px;
+    margin-bottom: 0;
+}
+
+.comments {
+    border-radius: 5px;
+    background-color: rgb(242, 108, 79);
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    float: right;
+    margin-top: 300px;
+    margin-right: 8px;
+    padding-top: 5px;
+}
+
+.actions{
+
+    width: 100%;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-left: 0;
+    padding-left: 95%;
+    margin-bottom: 60px;
+    padding-top: 10px;
+
+}
+
+.actions li{
+    list-style-type: none;
+    width: 30px;
+    border-radius: 3px;
+    background-color: rgb(242, 108, 79);
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#delete{
+    margin-top: 3px;
+    background-image: url("/app/img/delete.png");
+}
+
+#edit{
+    background-image: url("/app/img/edit.png");
+}
+
+.actions li a{
+    display: block;
+    height: 100%;
+}
+
+.social_panel li a{
+    display: block;
+    height: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+    .actions{
+        padding-left: 90% ;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    .actions{
+        padding-left: 85% ;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .actions{
+        padding-left: 75% ;
+    }
+}

@@ -16,13 +16,16 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PostFormComponent } from './components/post-form/post-form.component'
 import { RouterModule } from '@angular/router'
 import {DataService} from "./services/data.service";
+import { CommentsComponent } from './components/comments/comments.component'
+import { BigPostComponent } from './components/big-post/big-post.component'
+
 
 
 @NgModule({
     imports:      [ BrowserModule, FormsModule ],
     declarations: [ AppComponent, HeaderComponent, ContentComponent, FooterComponent, LogoComponent, NavbarComponent,
     LoginComponent, ModalComponent, SocialProfilesComponent, PostComponent, SmallPostComponent, SidebarComponent,
-     PostFormComponent ],
+     PostFormComponent, CommentsComponent, BigPostComponent ],
     bootstrap:    [ AppComponent ],
     providers: [DataService]
 })

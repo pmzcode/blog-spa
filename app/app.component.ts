@@ -52,7 +52,8 @@ import { Component } from '@angular/core';
             </div>
             <social-profiles></social-profiles>
         </div>-->
-        <content></content>
+        <!--<content></content>-->
+        <big-post></big-post>
     `
 })
 export class AppComponent {
