@@ -25,9 +25,9 @@ export class ContentComponent implements OnInit{
         this.smallposts = buff.slice(buff.length-2)
 
         for(var i=0;i< this.posts.length;i++){
-            console.log("Content:"+this.posts[i].id+" "+ this.posts[i].header);
-            console.log("-------------------------------------");
+            console.log("Content:"+this.posts[i].id+" "+ this.posts[i].header +"cc:"+i);
         }
+        console.log("-------------------------------------");
 
     }
 

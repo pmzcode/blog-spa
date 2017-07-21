@@ -24,6 +24,7 @@ import {HomeComponent} from "./components/home/home.component";
 const appRoutes: Routes =[
 
     { path:'create', component: PostFormComponent},
+    { path:'edit', component: SidebarComponent},
     { path: ':id', component: BigPostComponent },
     { path: '**', component: ContentComponent }
 

@@ -30,7 +30,6 @@ export class DataService{
     }
 
     isLogin(): boolean{
-        console.log("is");
         return this.authorized;
 
     }
@@ -83,8 +82,15 @@ export class DataService{
     }
 
     deletePost(id: number){
-        console.log("Deleted:"+ id);
-        delete this.data[0];
+        for(var i=0;i< this.data.length;i++){
+            console.log(this.data[i].id+" "+this.data[i].header+" ss:"+i)
+            if(this.data[i].id == id)
+            {
+                this.data.splice(i,1);
+                console.log("Deleted:"+ i);
+            }
+        }
+
     }
 
 }

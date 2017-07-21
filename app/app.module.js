@@ -28,6 +28,7 @@ var big_post_component_1 = require("./components/big-post/big-post.component");
 var home_component_1 = require("./components/home/home.component");
 var appRoutes = [
     { path: 'create', component: post_form_component_1.PostFormComponent },
+    { path: 'edit', component: sidebar_component_1.SidebarComponent },
     { path: ':id', component: big_post_component_1.BigPostComponent },
     { path: '**', component: content_component_1.ContentComponent }
 ];
