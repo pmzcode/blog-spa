@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="398f2485-fc81-448a-a566-6d156f9a5571" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.module.js" afterPath="$PROJECT_DIR$/app/app.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.module.js.map" afterPath="$PROJECT_DIR$/app/app.module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.module.ts" afterPath="$PROJECT_DIR$/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/content/content.component.html" afterPath="$PROJECT_DIR$/app/components/content/content.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/content/content.component.ts" afterPath="$PROJECT_DIR$/app/components/content/content.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/post/post.component.ts" afterPath="$PROJECT_DIR$/app/components/post/post.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/data.service.ts" afterPath="$PROJECT_DIR$/app/services/data.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,7 +59,7 @@
       <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="158">
               <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
               <folding />
             </state>
@@ -668,7 +661,7 @@
       <workItem from="1500546785821" duration="17781000" />
       <workItem from="1500635319646" duration="5092000" />
       <workItem from="1500646662085" duration="5649000" />
-      <workItem from="1500654599661" duration="4674000" />
+      <workItem from="1500654599661" duration="4740000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1499350775593</created>
@@ -789,11 +782,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500652548931</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added ability to delete post">
+      <created>1500660348968</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1500660348968</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239875000" />
+    <option name="totallyTimeSpent" value="239941000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -926,7 +926,8 @@
     <MESSAGE value="work with content component and begining doing elements responsive" />
     <MESSAGE value="add big post element" />
     <MESSAGE value="added ability to create post and edit routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ability to create post and edit routing" />
+    <MESSAGE value="added ability to delete post" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ability to delete post" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1288,7 +1289,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="158">
           <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
           <folding />
         </state>
