@@ -11,13 +11,23 @@ import {DataService} from "../../services/data.service";
 export class ContentComponent implements OnInit{
 
     posts: Post[];
+    smallposts: Post[];
 
     constructor(private dataService: DataService){}
 
 
 
     getPosts(): void {
-        this.posts = this.dataService.getPosts()
+        //this.posts =
+        let buff: Post[] = this.dataService.getPosts();
+
+        this.posts = buff;
+        this.smallposts = buff.slice(buff.length-2)
+
+        for(var i=0;i< this.posts.length;i++){
+            console.log("Content:"+this.posts[i].id+" "+ this.posts[i].header);
+            console.log("-------------------------------------");
+        }
 
     }
 

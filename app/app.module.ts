@@ -14,18 +14,27 @@ import { PostComponent } from './components/post/post.component';
 import { SmallPostComponent } from './components/small-post/small-post.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PostFormComponent } from './components/post-form/post-form.component'
-import { RouterModule } from '@angular/router'
+import {RouterModule, Routes} from '@angular/router'
 import {DataService} from "./services/data.service";
 import { CommentsComponent } from './components/comments/comments.component'
 import { BigPostComponent } from './components/big-post/big-post.component'
+import {HomeComponent} from "./components/home/home.component";
 
+
+const appRoutes: Routes =[
+
+    { path:'create', component: PostFormComponent},
+    { path: ':id', component: BigPostComponent },
+    { path: '**', component: ContentComponent }
+
+];
 
 
 @NgModule({
-    imports:      [ BrowserModule, FormsModule ],
+    imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
     declarations: [ AppComponent, HeaderComponent, ContentComponent, FooterComponent, LogoComponent, NavbarComponent,
     LoginComponent, ModalComponent, SocialProfilesComponent, PostComponent, SmallPostComponent, SidebarComponent,
-     PostFormComponent, CommentsComponent, BigPostComponent ],
+     PostFormComponent, CommentsComponent, BigPostComponent, HomeComponent ],
     bootstrap:    [ AppComponent ],
     providers: [DataService]
 })

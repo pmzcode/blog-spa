@@ -1,14 +1,21 @@
-<div>
-    <label>Post:</label> <input #postId /><br>
-    <label>Header:</label> <input #postHeader /><br>
-    <label>Subheader:</label> <input #postSubheader /><br>
-    <label>Image:</label> <input #postImage /><br>
-    <label>Content:</label> <input #postContent /><br>
-    <label>Comments:</label> <input #postComments /><br>
-    <button (click)="addPost(postId.value,postHeader.value,postSubheader.value,postImage.value,postContent.value,postComments.value);">
-        Add
-    </button>
-</div>
-<div class="grid grid-pad" *ngFor="let post of posts">
-    <post [post]="post"></post>
-</div>
+
+    <div class="row t1">
+        <div class="grid grid-pad col-lg-6 " >
+            <post *ngFor="let post of posts" [post]="post"></post>
+        </div>
+        <div class="col-lg-3 sidebar">
+            <sidebar></sidebar>
+        </div>
+    </div>
+        <div class="row t2">
+            <div class="col-lg-6">
+                <small-post *ngFor="let post of smallposts" [smallpost]="post" class="col-lg-6" ></small-post>
+            </div>
+        </div>
+
+
+
+
+
+
+

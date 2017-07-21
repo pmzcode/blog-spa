@@ -1,14 +1,14 @@
 
 <div class="post_header">
     <div class="image">
-        <ul class="actions">
+        <ul class="actions" [hidden]="isHide()">
             <li id="edit" (click)="deletePost()"></li>
             <li id="delete" (click)="deletePost()"></li>
         </ul>
-        <div class="comments">{{post.commentsCount}} Comments</div>
+        <div class="comments" [hidden]="isHide()">{{post.commentsCount}} Comments</div>
 
 
-        <ul class="social_panel">
+        <ul class="social_panel" [hidden]="isHide()">
             <li class="social" id="facebook"><a href="*"></a></li>
             <li class="social" id="twitter"><a href="*"></a> </li>
         </ul>

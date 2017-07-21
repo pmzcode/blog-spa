@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {DataService} from "../../services/data.service";
 
 
 @Component({
@@ -7,26 +8,25 @@ import { Component } from '@angular/core';
     styleUrls: ['app/components/login/login.component.css']
 })
 export class LoginComponent{
-    authorized: boolean = false;
+
     username: string = '';
     hello: string = ''
     action: string = "Login";
 
     hide: boolean = false;
 
+    constructor(private dataService: DataService){}
+
     login() : void {
-        if(!this.authorized){
+        if(!this.dataService.isLogin()){
             this.action = "Logout";
-            this.authorized = true;
             this.hide = true;
         } else {
             this.action = "Login";
             this.username = "";
-            this.authorized = false;
             this.hello ="";
-
+            this.dataService.logout();
         }
-
 
     }
 

@@ -1,5 +1,5 @@
 .post{
-    width: 50%;
+    width: 100%;
     height: auto;
     margin-left: 20px;
     padding-left: 35px;
@@ -20,7 +20,7 @@
 
 .post_header{
     height: 450px;
-    width: 50%;
+    width: 100%;
     background-color: white;
     margin-left: 20px;
     margin-bottom: 10px;

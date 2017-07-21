@@ -1,14 +1,14 @@
 <form class="form">
     <h2 id="main-title">Create Post</h2>
     <div class="header">Post Title<sup id="require">*</sup> </div>
-    <input class="textbox" required type="text">
+    <input class="textbox" required type="text" #postHeader>
     <div class="header">Post Subtitle </div>
-    <input class="textbox" type="text">
+    <input class="textbox" type="text" #postSubheader>
     <div class="header">Tags</div>
-    <input class="textbox" type="text">
+    <input class="textbox" type="text" #postTags>
     <div class="help">Please enter comma separated list of tags.</div>
     <div class="header">Post Text</div>
-    <textarea id="text"></textarea>
-    <button id="create-btn">Create Post</button>
-    <button id="cancel-btn">Cancel</button>
+    <textarea id="text" #postText></textarea>
+    <button id="create-btn" [routerLink]="['/']" (click)="addPost(22,postHeader.value,postSubheader.value,'dd',postText.value,13)">Create Post</button>
+    <button id="cancel-btn" [routerLink]="['/']">Cancel</button>
 </form>

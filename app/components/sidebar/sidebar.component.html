@@ -17,9 +17,7 @@
     </div>
     <div class="header">Resent Posts</div>
     <ul class="recent-posts">
-        <li>Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pelletsque sit amen rutrum <p class="date">14th Febuary 2012</p></li>
-        <li>Fusce augue arcu, volutpat eu facilisis suscipit, venenatis vehicula diam <p class="date">14th Febuary 2012</p></li>
-        <li>Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pelletsque sit amen rutrum <p class="date">14th Febuary 2012</p></li>
+        <li  *ngFor="let post of recentPosts">{{post.content}} <p class="date">14th Febuary 2012</p></li>
     </ul>
     <div class="header">Popular Tags</div>
     <div class="tags"></div>
