@@ -2,7 +2,7 @@
 <div class="post_header">
     <div class="image">
         <ul class="actions" [hidden]="isHide()">
-            <li id="edit" (click)="deletePost()"></li>
+            <li id="edit" [routerLink]="['edit',post.id]"></li>
             <li id="delete" (click)="deletePost()"></li>
         </ul>
         <div class="comments" [hidden]="isHide()">{{post.commentsCount}} Comments</div>
@@ -15,8 +15,8 @@
     </div>
 </div>
 <div class="post">
-    <div class="header">{{post.header}}</div>
-    <div class="date">19th April 2012</div>
+    <div class="header" [routerLink]="['',post.id]" >{{post.header}}</div>
+    <div class="date">{{post.date}}</div>
     <div class="subheader">{{post.subheader}}</div>
     <div class="text">
         {{post.content}}
