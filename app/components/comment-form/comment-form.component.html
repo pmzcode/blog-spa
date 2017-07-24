@@ -1,0 +1,13 @@
+<div class="background">
+</div>
+<div class="modal_window">
+    <div class="modal-header">
+        Comment
+    </div>
+
+    <textarea class="field" placeholder="Comment text" #comment></textarea>
+    <button class="btn" (click)="sendComment(comment.value)" >Send</button>
+    <button class="btn" id="close" (click)="openForm()">Close</button>
+
+</div>
+

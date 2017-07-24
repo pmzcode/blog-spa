@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {Post} from "../../models/post";
 import {DataService} from "../../services/data.service";
+import {Tag} from "../../models/tag";
+
 
 @Component({
     selector: 'sidebar',
@@ -9,14 +11,20 @@ import {DataService} from "../../services/data.service";
 })
 export class SidebarComponent{
     recentPosts: Post[];
+    popularTags: Tag[];
 
 
     constructor(private dataService: DataService){}
     getRecentPosts(){
-        this.recentPosts = this.dataService.getRecentPosts()
+        this.recentPosts = this.dataService.getRecentPosts();
+    }
+
+    getPopularTags(){
+        this.popularTags = this.dataService.getPopularTags()
     }
 
     ngOnInit(){
         this.getRecentPosts();
+        this.getPopularTags();
     }
 }

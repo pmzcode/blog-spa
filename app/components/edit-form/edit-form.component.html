@@ -1,0 +1,14 @@
+<form class="form">
+    <h2 id="main-title">Edit Post</h2>
+    <div class="header">Post Title<sup id="require">*</sup> </div>
+    <input class="textbox" required type="text" value={{post.header}} #postHeader>
+    <div class="header">Post Subtitle </div>
+    <input class="textbox" type="text" value={{post.subheader}} #postSubheader>
+    <div class="header">Tags</div>
+    <input class="textbox" type="text" value={{post.tags}}  #postTags>
+    <div class="help">Please enter comma separated list of tags.</div>
+    <div class="header">Post Text</div>
+    <textarea id="text" value={{post.content}} #postText></textarea>
+    <button id="create-btn" [routerLink]="['/']" (click)="editPost(postHeader.value,postSubheader.value,postText.value,postTags.value)" >Edit Post</button>
+    <button id="cancel-btn" [routerLink]="['/']">Cancel</button>
+</form>

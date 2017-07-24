@@ -1,17 +1,17 @@
 
     <div class="row t1">
-        <div class="grid grid-pad col-lg-6 " >
-            <post (onPostDelete)="onPostDelete($event)" *ngFor="let post of posts" [post]="post"></post>
+        <div class="grid grid-pad col-lg-6 col-md-5 col-sm-5 col-xs-12" >
+            <post *ngFor="let post of posts"  [post]="post"></post>
         </div>
-        <div class="col-lg-3 sidebar">
+        <div class="col-lg-3 col-md-5 col-sm-6 sidebar col-xs-12">
             <sidebar></sidebar>
         </div>
     </div>
-        <div class="row t2">
-            <div class="col-lg-6">
-                <small-post *ngFor="let post of smallposts" [smallpost]="post" class="col-lg-6" ></small-post>
-            </div>
+    <div class="row t2">
+        <div class="grid grid-pad col-lg-6 col-md-10 col-sm-12 col-xs-12">
+            <small-post *ngFor="let post of smallposts" [smallpost]="post" class="col-lg-6 col-md-5 col-sm-5 col-xs-6"></small-post>
         </div>
+    </div>
 
 
 

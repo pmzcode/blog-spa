@@ -1,18 +1,14 @@
 .post{
-    width: 630px;
+    width: 100%;
     height: 280px;
-    margin-left: 20px;
-    padding-left: 35px;
-    padding-top: 38px;
+
     padding: 38px 35px 38px 35px;
     box-shadow:
             0 0 0 1px rgb(194, 192, 184) inset,
-            0px 5px 0 -4px rgb(255, 255, 255),
-            0px 5px 0 -3px rgb(194, 192, 184),
-            0 11px 0 -8px rgb(255, 255, 255),
-            0 11px 0 -7px rgb(194, 192, 184),
-            0 17px 0 -12px rgb(255, 255, 255),
-            0 17px 0 -11px rgb(194, 192, 184);
+            0px 7px 0 -4px white,
+            0px 7px 0 -3px rgb(194, 192, 184),
+            0 15px 0 -8px white,
+            0 15px 0 -7px rgb(194, 192, 184);
     margin-bottom: 30px;
 
 }
@@ -27,18 +23,17 @@
 
 .post_header{
     height: 308px;
-    width: 630px;
+    width: 100%;
     background-color: white;
-    margin-left: 20px;
     margin-bottom: 10px;
     border: 1px solid rgb(194, 192, 184);
-    padding: 0 0 0 0;
+    padding: 8px 8px 8px 8px;
 }
 
 .image{
     height: 292px;
-    width: 614px;
-    margin: 8px 8px 8px 8px;
+    width: 100%;
+
     background-color: black;
     background-image: url("/app/img/post1-image.png");
 }
@@ -155,7 +150,7 @@
     margin-right: 5px;
     margin-top: 5px;
     margin-left: 0;
-    padding-left: 582px;
+    padding-left: 95%;
 }
 
 .actions li{
@@ -189,15 +184,16 @@
 
 
 
+
 @media screen and (max-width: 1200px) {
     .post{
-        width: 50%;
+        width: 100%;
         margin-right: auto;
         margin-left: 0;
     }
 
     .post_header{
-        width: 50%;
+        width: 100%;
         margin-right: auto;
         margin-left: 0;
     }
@@ -207,8 +203,16 @@
         height: auto;
 
     }
-}
 
+    .t1{
+        margin-right: auto;
+    }
+
+    .actions{
+        padding-left: 90%;
+    }
+}
+/*
 @media screen and (max-width: 615px) {
     .post{
         width: 70%;
@@ -257,4 +261,4 @@
         margin-right: 20px;
     }
 
-}
+}*/

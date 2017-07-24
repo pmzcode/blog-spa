@@ -29,4 +29,6 @@ export class PostComponent implements OnInit{
     isHide(): boolean{
         return !this.dataService.isLogin();
     }
+
+
 }

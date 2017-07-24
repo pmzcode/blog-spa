@@ -19,12 +19,16 @@ import {DataService} from "./services/data.service";
 import { CommentsComponent } from './components/comments/comments.component'
 import { BigPostComponent } from './components/big-post/big-post.component'
 import {HomeComponent} from "./components/home/home.component";
+import { EditFormComponent } from "./components/edit-form/edit-form.component"
+import {CommentFormComponent} from "./components/comment-form/comment-form.component";
+import {SubcommentFormComponent} from "./components/subcomment-form/subcomment-form.component";
+
 
 
 const appRoutes: Routes =[
 
     { path:'create', component: PostFormComponent},
-    { path:'edit', component: SidebarComponent},
+    { path:'edit/:id', component: EditFormComponent},
     { path: ':id', component: BigPostComponent },
     { path: '**', component: ContentComponent }
 
@@ -35,7 +39,8 @@ const appRoutes: Routes =[
     imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
     declarations: [ AppComponent, HeaderComponent, ContentComponent, FooterComponent, LogoComponent, NavbarComponent,
     LoginComponent, ModalComponent, SocialProfilesComponent, PostComponent, SmallPostComponent, SidebarComponent,
-     PostFormComponent, CommentsComponent, BigPostComponent, HomeComponent ],
+     PostFormComponent, CommentsComponent, BigPostComponent, HomeComponent,  EditFormComponent, CommentFormComponent,
+    SubcommentFormComponent ],
     bootstrap:    [ AppComponent ],
     providers: [DataService]
 })

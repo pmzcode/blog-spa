@@ -41,3 +41,10 @@ ul li {
     background-image: url("/app/img/social-profiles/rss.png");
 }
 
+
+@media screen and (max-width: 900px) {
+
+    .social_profiles{
+        visibility: hidden;
+    }
+}

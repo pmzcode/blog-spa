@@ -26,9 +26,12 @@ var data_service_1 = require("./services/data.service");
 var comments_component_1 = require("./components/comments/comments.component");
 var big_post_component_1 = require("./components/big-post/big-post.component");
 var home_component_1 = require("./components/home/home.component");
+var edit_form_component_1 = require("./components/edit-form/edit-form.component");
+var comment_form_component_1 = require("./components/comment-form/comment-form.component");
+var subcomment_form_component_1 = require("./components/subcomment-form/subcomment-form.component");
 var appRoutes = [
     { path: 'create', component: post_form_component_1.PostFormComponent },
-    { path: 'edit', component: sidebar_component_1.SidebarComponent },
+    { path: 'edit/:id', component: edit_form_component_1.EditFormComponent },
     { path: ':id', component: big_post_component_1.BigPostComponent },
     { path: '**', component: content_component_1.ContentComponent }
 ];
@@ -42,7 +45,8 @@ AppModule = __decorate([
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, router_1.RouterModule.forRoot(appRoutes)],
         declarations: [app_component_1.AppComponent, header_component_1.HeaderComponent, content_component_1.ContentComponent, footer_component_1.FooterComponent, logo_component_1.LogoComponent, navigation_component_1.NavbarComponent,
             login_component_1.LoginComponent, modal_component_1.ModalComponent, social_profiles_component_1.SocialProfilesComponent, post_component_1.PostComponent, small_post_component_1.SmallPostComponent, sidebar_component_1.SidebarComponent,
-            post_form_component_1.PostFormComponent, comments_component_1.CommentsComponent, big_post_component_1.BigPostComponent, home_component_1.HomeComponent],
+            post_form_component_1.PostFormComponent, comments_component_1.CommentsComponent, big_post_component_1.BigPostComponent, home_component_1.HomeComponent, edit_form_component_1.EditFormComponent, comment_form_component_1.CommentFormComponent,
+            subcomment_form_component_1.SubcommentFormComponent],
         bootstrap: [app_component_1.AppComponent],
         providers: [data_service_1.DataService]
     })

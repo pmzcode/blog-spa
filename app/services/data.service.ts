@@ -55,13 +55,15 @@ export class DataService{
         ];
 
     private comments: Comment[] = [
+
+
         {
             id:1,
             postId:1,
             sender: "Egor" ,
-            recipient:"",
+            recipient:"vasua",
             date:"7 days ago" ,
-            text:"ABVG" ,
+            text:"Hi my names egor" ,
             childComment:[]
         },
 
@@ -71,28 +73,18 @@ export class DataService{
             sender: "Egor" ,
             recipient:"",
             date:"7 days ago" ,
-            text:"Hi my names egor" ,
-            childComment:[4]
-        },
-
-        {
-            id:3,
-            postId:1,
-            sender: "Egor" ,
-            recipient:"",
-            date:"7 days ago" ,
             text:"Hi" ,
             childComment:[]
         },
 
         {
-            id:4,
+            id:3,
             postId:1,
             sender: "Vasya" ,
-            recipient:"Egor",
+            recipient:"",
             date:"7 days ago" ,
             text:"ti loh" ,
-            childComment:[]
+            childComment:[1]
         },
     ]
 
@@ -110,6 +102,7 @@ export class DataService{
 
         //отправляем запрос получаем данные
 
+        localStorage.setItem('user', 'egor');
         return "egor";
     }
 
@@ -214,6 +207,13 @@ export class DataService{
         return result;
     }
 
+    addComment(postId: number, sender: string,recipient: string, date:string, text: string){
+        if(localStorage.getItem("user"))
+            this.comments.push(new Comment(this.comments.length+1, postId,localStorage.getItem("user"), recipient, date, text, [] ));
+    }
+
+
+
 
 
     private _getDate(): string {
@@ -253,4 +253,17 @@ export class DataService{
     }
 
 
+    addSubcomment(postId: number, commentId: number, comment:string) {
+        for(var i=0;i< this.comments.length;i++){
+            if(this.comments[i].id == commentId)
+            {
+                let buff = new Comment(this.comments.length+1,postId,localStorage.getItem("user"),this.comments[i].sender,"",comment,[]);
+                console.log(buff);
+                this.comments[i].childComment.push(buff.id);
+                this.comments.push(buff);
+                console.log(this.comments);
+            }
+        }
+
+    }
 }
